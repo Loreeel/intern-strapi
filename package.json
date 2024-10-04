@@ -27,8 +27,8 @@
     "typescript": "^5"
   },
   "engines": {
-    "node": ">=18.0.0 <=20.x.x",
-    "npm": ">=6.0.0"
+    "node": "20.10.0",
+    "npm": "10.2.3"
   },
   "strapi": {
     "uuid": "b2e2d321-1bf6-42fe-a819-1e60f2ca4fed"
