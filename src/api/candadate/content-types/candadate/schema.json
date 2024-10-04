@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "candadates",
+  "info": {
+    "singularName": "candadate",
+    "pluralName": "candadates",
+    "displayName": "Candadate"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "cv": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "vacancies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::vacancy.vacancy",
+      "mappedBy": "candadate"
+    }
+  }
+}

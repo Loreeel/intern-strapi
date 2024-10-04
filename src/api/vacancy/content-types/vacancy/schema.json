@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vacancies",
+  "info": {
+    "singularName": "vacancy",
+    "pluralName": "vacancies",
+    "displayName": "Vacancy"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "salary": {
+      "type": "integer"
+    },
+    "Location": {
+      "type": "string"
+    },
+    "Requirements": {
+      "type": "text"
+    },
+    "candadate": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::candadate.candadate",
+      "inversedBy": "vacancies"
+    }
+  }
+}
